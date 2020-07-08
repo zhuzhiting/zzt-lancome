@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zzt-兰蔻登录</title>
     <link rel="stylesheet" href="./static/css/signin.css">
+    <script src="../jquery-1.12.4.js"></script>
+    
 </head>
 <body>
    <div class="signin-box">
@@ -18,13 +20,13 @@
         <!-- 账号 -->
         <div class="signin-box-main-phone">
             <label>账号*</label>
-            <input type="tel" maxlength="" placeholder="账号" id="loginMobilePopup">
+            <input type="tel" maxlength="" placeholder="账号" id="lc-username">
         </div>
         <!-- 密码 -->
         <div class="signin-box-main-message">
             <label>密码*</label>
             <div>
-                <input type="tel" maxlength="6" placeholder="密码" id="loginSmsPopup">
+                <input type="password" maxlength="6" placeholder="密码" id="lc-password">
                 <!-- <a>
                     <span>发送</span>
                 </a>   -->                
@@ -32,7 +34,7 @@
         </div>
         <!-- 登录按钮 -->
         <div class="signin-box-main-btn">
-            <a class=>登录</a>
+            <span class=>登录</span>
         </div>
         <!-- 密码登录 -->
         <!-- <div class="signin-box-main-password">
@@ -60,5 +62,6 @@
             </ul>
         </div>
    </div>
+   <script src="./static/js/signin.js"></script>
 </body>
 </html>

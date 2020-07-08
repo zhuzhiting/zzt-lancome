@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zzt-兰蔻登录</title>
     <link rel="stylesheet" href="static/css/register.css">
+    <script src="../jquery-1.12.4.js"></script>
 </head>
 <body>
    <div class="signin-box">
@@ -18,10 +19,10 @@
         <!-- 手机号验证 -->
         <div class="signin-box-main-phone">
             <label>手机号*</label>
-            <input type="tel" maxlength="" placeholder="账号" id="loginMobilePopup">
+            <input type="tel" maxlength="" placeholder="账号" id="lc-username">
         </div>
         <!-- 短信验证码 -->
-        <div class="signin-box-main-message">
+        <!-- <div class="signin-box-main-message">
             <label>短信验证码*</label>
             <div>
                 <input type="tel" maxlength="6" placeholder="密码" id="loginSmsPopup">
@@ -29,24 +30,24 @@
                     <span>发送</span>
                 </a>                  
                 </div>    
-        </div>
+        </div> -->
         <!-- 输入密码 -->
         <div class="signin-box-main-message">
             <label>输入新密码*</label>
             <div>
-                <input type="tel" maxlength="6" placeholder="新密码" id="loginSmsPopup">                
+                <input type="password" maxlength="6" placeholder="新密码" id="lc-password">                
             </div>   
         </div>
         <!-- 确认新密码 -->
-        <div class="signin-box-main-message">
+        <!-- <div class="signin-box-main-message">
             <label>确认新密码*</label>
             <div>
                 <input type="tel" maxlength="6" placeholder="确认新密码" id="loginSmsPopup">                
             </div>   
-        </div>
+        </div> -->
         <!-- 注册按钮 -->
         <div class="signin-box-main-btn">
-            <a class=>注册</a>
+            <span>注册</span>
         </div>
         <!-- 密码登录 -->
         <div class="signin-box-main-password">
@@ -74,5 +75,36 @@
             </ul>
         </div>
    </div>
+
+   <!--  -->
+   <script>
+        $(".signin-box-main-btn span").on("click",function(){
+            $.ajax({
+                url:'http://localhost/LC/lancome/interface/register.php',
+                type:'post',
+                data:{username:$('#lc-username').val(),password:$('#lc-password').val(),bool:0},
+                success:function(data){
+                    
+                    console.log(data)
+                    if(data==1){
+                        alert("注册成功!");
+                        　window.location.href="http://localhost/LC/lancome/app/signin.html";
+                    }
+                },
+                complete:function(){
+                    console.log('ajax完成了111')
+                },
+                error:function(XMLHttpRequest, textStatus){
+                    console.log(textStatus)
+                    console.log('ajax发生错误了')
+                }
+                // timeout:2000,
+            })
+            var url='http://localhost/LC/lancome/interface/register.php'
+            var msg="username="+$('#lc-username').val()+"&password="+$('#lc-password').val()+"&bool=0";
+            
+        })
+
+   </script>
 </body>
 </html>

@@ -112,7 +112,7 @@
 .signin-box-main-btn{
   margin: 20px 0 18px;
 }
-.signin-box-main-btn a{
+.signin-box-main-btn span{
   text-align: center;
   display: block;
   width: 352px;
