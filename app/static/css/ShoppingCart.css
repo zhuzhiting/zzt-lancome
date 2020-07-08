@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    font-weight: normal;
+    border: none;
+    box-sizing: border-box;
+  }
+  ol,
+  li,
+  ul {
+    list-style: none;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  input{
+      outline: none;
+  }
+
+  /* 购物车页面 */
+  /* .shoppingCart{
+      padding: 200px 200px;
+  } */
+
+/* 顶部logo */
+.shoppingCart-top-logo{
+    width:98%;
+    height: 100px;
+    background-color: #000000;
+    text-align: center;
+}
+.shoppingCart-top-logo img{
+    width: 200px;
+    padding: 32px 0;
+}
+/* 购物付款导航 */
+.shoppingCart-top-nav ul{
+    font-size: 0;
+    margin-top: 15px;
+    margin-bottom: 90px;
+    text-align: center;
+    border-bottom: 1px solid #999;
+}
+.shoppingCart-top-nav ul li{
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    width: 33.333%;
+    line-height: 38px;
+}
+.shoppingCart-content{
+    padding: 0 130px;
+}
+.shoppingCart-content h3{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 48px;
+    border-bottom: 3px solid #000000;
+}
+/* title */
+.shoppingCart-content-title{
+    height: 50px;
+    line-height: 50px;
+    margin: 17px 130px;
+    font-size: 14px;
+    background-color: #eee;
+    margin-top: 22px;
+    display: flex;
+    
+}
+.Select-all-left{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+.Select-all-left input{
+    margin-top: 19px;
+}
+.Select-all-list{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+
+
+/* 购物车详情 */
+.Commodity-details{
+    position: relative;
+    padding: 50px 0;
+    border-bottom: 1px solid #e8e8e8;
+    margin: 0 130px;
+}
+/* 订单总价 */
+.all-price{
+    padding: 30px 0;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px;
+}
+.all-price-left{
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+   
+}
+.all-price-right-main{
+    width: 356px;
+}
+.all-price-right-main p{
+    margin-bottom: 16px;
+}
+.all-price-right-main p span{
+    display: inline-block;
+    float: right;
+}
+/* 立即结算 */
+.settlement{
+    margin: 0 200px;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 30px 0 60px 20px;
+    float: right;
+}
+.settlement-main{
+    width: 356px;
+    font-size: 18px;
+}
+.settlement-main p{
+    margin-bottom: 60px;
+}
+.settlement-main p span{
+    display: inline-block;
+    float: right;
+}
+
+.settlement-main-r-b{
+    width: 356px;
+    display: flex;
+    justify-content: space-between;
+}
+.continue{
+    display: block;
+    width: 160px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    margin-right: 20px;
+    background: #fff;
+    border: 1px solid #000;
+}
+.right-now{
+    display: block;
+    color: #fff;
+    background: #000;
+    width: 160px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    font-weight: normal;
+    border: none;
+    box-sizing: border-box;
+  }
+  ol,
+  li,
+  ul {
+    list-style: none;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  /* 登录页面 */
+.signin-box{
+    width: 900px;
+    height: 400px;
+    margin: 100px auto;
+}
+.sigin-welcome{
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #d51b51;
+}
+.signin-box-main{
+  /* display: inline-block; */
+  padding: 40px 65px;
+  position: relative;
+}
+/* 登录注册 */
+.signin-box-main-singin{
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 0;
+  text-align: center;
+}
+.signin-box-main-singin li{
+  display: inline-block;
+}
+.signin-box-main-singin li a{
+  position: relative;
+  display: block;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 0 64px;
+}
+/* 手机号验证 */
+.signin-box-main-phone{
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 93px;
+}
+.signin-box-main-phone label{
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 38px;
+}
+.signin-box-main-phone input{
+  /* width: 100%; */
+  height: 38px;
+  padding: 5px 9px;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  color: #000;
+}
+/* 短信验证码 */
+.signin-box-main-message{
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 93px;
+}
+.signin-box-main-message label{
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 38px;
+}
+.signin-box-main-message input{
+  height: 38px;
+  padding: 5px 9px;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  color: #000;
+}
+.signin-box-main-message a{
+  position: absolute;
+  left : 265px;
+  top: 0;
+  display: block;
+  width: 78px;
+  height: 38px;
+  line-height: 38px;
+  margin-left: 10px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+}
+/* 登录按钮 */
+.signin-box-main-btn{
+  margin: 20px 0 18px;
+}
+.signin-box-main-btn a{
+  text-align: center;
+  display: block;
+  width: 352px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 17px;
+  color: #fff;
+  background-color: #000;
+}
+/* 密码登录 */
+.signin-box-main-password{
+  position: relative;
+  margin: 20px 0;
+}
+.signin-box-main-password a{
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+/*  */
+.signin-box-main-right{
+  position: absolute;
+  right: 110px;
+  top: 170px;
+  
+}
+.signin-box-main-right > p:nth-child(1){
+  font-size: 16px;
+}
+.signin-box-main-right > p,
+.signin-box-main-right > ul > li{
+  line-height: 30px;
+  font-size: 14px;
+}

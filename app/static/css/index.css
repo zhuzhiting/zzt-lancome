@@ -1,0 +1,613 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+  font-weight: normal;
+  border: none;
+  box-sizing: border-box;
+}
+ol,
+li,
+ul {
+  list-style: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+/* img{
+    display: block;
+} */
+
+/* 顶部导航 */
+.index-top {
+  color: #fff;
+  background-color: #000;
+}
+.index-top .index-top-header {
+  height: 78px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.index-top .index-top-logo {
+  width: 153px;
+  padding: 32px 0px;
+  margin: 0 auto;
+}
+.index-top .index-top-logo a img {
+  width: 153px;
+}
+.index-top .index-top-bottom {
+  margin: 0 auto;
+  position: relative;
+}
+.index-top .index-top-bottom .index-top-bottom-list {
+  width: 1366px;
+  padding:0 78px 0 49px;
+  margin: 0 auto;
+  display: flex;
+}
+.index-top .index-top-bottom .index-top-bottom-one-list {
+  display: flex;
+  width: 100%;
+}
+.index-top .index-top-bottom .index-top-bottom-list > ul:nth-child(1) > li {
+  padding: 0 23px;
+  line-height: 50px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.index-top-iconfont{
+    display: flex;
+    align-items: center;
+}
+.index-top-iconfont>li{
+    margin-left: 14px;
+    cursor: pointer;
+}
+.index-top-bottom-list>ul>li:nth-child(2):hover .second-Skin-care{
+  display: block;
+  transition: all 2s ;
+}
+.index-top-bottom-list>ul>li:nth-child(2):hover .second-Skin-care-triangle{
+  display: block;
+  transition: all 2s ;
+}
+
+.index-top-bottom-list>ul>li:nth-child(3):hover .second-Make-up{
+  display: block;
+  transition: all 2s ;
+}
+.index-top-bottom-list>ul>li:nth-child(3):hover .second-Make-up-triangle{
+  display: block;
+  transition: all 2s ;
+}
+.index-top-bottom-list>ul>li:nth-child(4):hover .second-Perfume{
+  display: block;
+  transition: all 2s ;
+}
+.index-top-bottom-list>ul>li:nth-child(4):hover .second-Perfume-triangle{
+  display: block;
+  transition: all 2s ;
+}
+
+/* 护肤 二级菜单样式 */
+.second-Skin-care-triangle{
+  position: absolute;
+  width:0;
+  height:0;
+  border-right:10px solid transparent;
+  border-left:10px solid transparent;
+  border-top:10px solid black;
+  z-index: 10;
+  display: none;
+  transform: translateX(4px);
+}
+
+
+.second-Skin-care{
+  width: 100%;
+  height: 350px;
+  overflow-y: auto;
+  background-color: #fff;
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  transition: all 2s;
+  display:none;/*  */
+  color: #000;
+}
+
+.second-Skin-care-pre{
+  display: flex;
+  justify-content: center;
+  padding:40px 0px;
+}
+.second-Skin-care-list{
+  /* width: 50%; */
+  /* border-right: 1px solid #999; */
+  display: inline-block;
+  justify-content: center;
+}
+.second-Skin-care-list div{
+  /* z-index: 9; */
+  display:inline-block;
+  min-width: 160px;
+  margin-right: 10px;
+  vertical-align: top;
+ 
+}
+.second-Skin-care-list span{
+  font-weight: bolder;
+}
+
+.second-Skin-care-img{
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0 0 94px;
+  border-left: 1px solid #ccc;
+}
+.second-Skin-care-img i{
+  display: inline-block;
+
+}
+
+.second-Skin-care-img-title, 
+.second-Make-up-img-title,
+.second-Perfume-img-title{
+  font-weight: bolder;
+}
+.second-Skin-care-img p{
+  text-align: center;
+  padding:0px;
+  margin: 0px;
+  line-height: normal;
+}
+/* 彩妆 二级菜单样式 */
+.second-Make-up-triangle{
+  position: absolute;
+  width:0;
+  height:0;
+  border-right:10px solid transparent;
+  border-left:10px solid transparent;
+  border-top:10px solid black;
+  z-index: 10;
+  display: none;
+  transform: translateX(4px);
+}
+
+
+.second-Make-up{
+  width: 100%;
+  height: 350px;
+  overflow-y: auto;
+  background-color: #fff;
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  transition: all 2s;
+  display:none;/*  */
+  color: #000;
+}
+
+.second-Make-up-pre{
+  display: flex;
+  justify-content: center;
+  padding:40px 0px;
+}
+.second-Make-up-list{
+  /* width: 50%; */
+  /* border-right: 1px solid #999; */
+  display: inline-block;
+  justify-content: center;
+}
+.second-Make-up-list div{
+  /* z-index: 9; */
+  display:inline-block;
+  min-width: 160px;
+  margin-right: 10px;
+  vertical-align: top;
+ 
+}
+.second-Make-up-list span{
+  font-weight: bolder;
+}
+
+.second-Make-up-img{
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0 0 94px;
+  border-left: 1px solid #ccc;
+}
+.second-Make-up-img i{
+  display: inline-block;
+
+}
+
+.second-Make-up-img .second-Make-up-img-title {
+  font-weight: bolder;
+}
+.second-Make-up-img p{
+  text-align: center;
+  padding:0px;
+  margin: 0px;
+  line-height: normal;
+}
+
+/* 香水 二级菜单样式 */
+.second-Perfume-triangle{
+  position: absolute;
+  width:0;
+  height:0;
+  border-right:10px solid transparent;
+  border-left:10px solid transparent;
+  border-top:10px solid black;
+  z-index: 10;
+  display: none;
+  transform: translateX(4px);
+}
+
+
+.second-Perfume{
+  width: 100%;
+  height: 350px;
+  overflow-y: auto;
+  background-color: #fff;
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  transition: all 2s;
+  display:none;/*  */
+  color: #000;
+}
+
+.second-Perfume-pre{
+  display: flex;
+  justify-content: center;
+  padding:40px 0px;
+}
+.second-Perfume-list{
+  /* width: 50%; */
+  /* border-right: 1px solid #999; */
+  display: inline-block;
+  justify-content: center;
+}
+.second-Perfume-list div{
+  /* z-index: 9; */
+  display:inline-block;
+  min-width: 160px;
+  margin-right: 10px;
+  vertical-align: top;
+ 
+}
+.second-Perfume-list span{
+  font-weight: bolder;
+}
+
+.second-Perfume-img{
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0 0 94px;
+  border-left: 1px solid #ccc;
+}
+.second-Perfume-img i{
+  display: inline-block;
+
+}
+
+.second-Perfume-img .second-Perfume-img-title {
+  font-weight: bolder;
+}
+.second-Perfume-img p{
+  text-align: center;
+  padding:0px;
+  margin: 0px;
+  line-height: normal;
+}
+
+
+/* 轮播图 */
+.index-banner{
+  width: 100%;
+  margin-bottom: 80px;
+}
+.index-banner .swiper-container .swiper-pagination{
+  position: static;
+  padding:12px 0 0;
+}
+:root{
+  --swiper-theme-color:#333 !important;
+}
+.index-banner img{
+    width: 100%;
+    /* margin-bottom: 80px; */
+}
+
+/* 回到顶部 */
+.back-top {
+    font-size: 0;
+    width: 50px;
+    height: 110px;
+    text-align: center;
+    background: 0 0;
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    z-index: 8;
+    cursor: pointer;
+}
+
+/* 热销星品 */
+.index-center-goods h2 {
+  text-align: center;
+  font-size: 38px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.index-center-goods-star {
+  margin: 0 auto;
+  text-align: center;
+}
+.index-center-goods-star div {
+  display: inline-block;
+}
+.index-center-goods-star img {
+  width: 432px;
+  height: 432px;
+}
+.index-center-goods-star h3 {
+  padding: 18px 0 10px;
+  font-size: 26px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.index-center-goods-star p {
+  padding: 0 0 15px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 18px;
+  color: #666;
+}
+.index-center-goods-star span {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  display: block;
+  padding-bottom: 20px;
+}
+.index-center-goods-star-btn {
+  width: 110px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  background-color: #000;
+}
+.index-center-goods-star a {
+  color: #fff;
+}
+
+/* 重磅新品 */
+.index-center-new-products {
+  padding: 0 20px;
+  margin-bottom: 12px;
+}
+.index-center-new-products-content h2 {
+  font-size: 38px;
+  line-height: 40px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.index-center-new-products-content img {
+  width: 100%;
+}
+.index-center-new-products-content a h3 {
+  font-size: 26px;
+  line-height: 26px;
+  padding: 14px 0 4px;
+  color: #000;
+}
+.index-center-new-products-content a p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #666;
+  margin: 0;
+  letter-spacing: 1px;
+}
+.index-center-new-products-foot {
+  margin: 0 auto;
+  text-align: center;
+}
+.index-center-new-products-foot div {
+  display: inline-block;
+}
+.index-center-new-products-foot img {
+  width: 432px;
+  height: 432px;
+}
+.index-center-new-products-foot h3 {
+  padding: 18px 0 10px;
+  font-size: 26px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.index-center-new-products-foot p {
+  padding: 0 0 15px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 18px;
+  color: #666;
+}
+.index-center-new-products-foot span {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  display: block;
+  padding-bottom: 20px;
+}
+.index-center-new-products-foot-btn {
+  width: 110px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  background-color: #000;
+}
+.index-center-new-products-foot a {
+  color: #fff;
+}
+
+/* 官方专属 宠粉惊喜 */
+.index-center-only h2 {
+  font-size: 38px;
+  line-height: 40px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.index-center-only img {
+  width: 100%;
+}
+
+/* 官方特别服务 */
+.index-center-service {
+  margin: 0 auto;
+  text-align: center;
+}
+.index-center-service h2 {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 38px;
+  line-height: 40px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.index-center-service div {
+  display: inline-block;
+}
+.index-center-service img {
+  width: 432px;
+  height: 360px;
+  padding: 0 17px;
+}
+.index-center-service h3 {
+  padding: 20px 0 10px;
+  font-size: 26px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.index-center-service p {
+  padding: 0 0 15px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 18px;
+  color: #666;
+}
+.index-center-service-btn {
+  width: 110px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  background-color: #000;
+}
+.index-center-service a {
+  color: #fff;
+}
+
+/* 加入兰蔻探索美丽和幸福 */
+.index-bottom-banner a img {
+  width: 100%;
+  margin-top: 80px;
+  display: block;
+}
+
+/* 底部导航 */
+.footer {
+  padding: 0;
+}
+
+/* 兰蔻中国官方网站 */
+.index-footer-about {
+  text-align: center;
+  border-bottom: 1px solid #333;
+  position: relative;
+  color: #fff;
+  background-color: #000;
+}
+.index-footer-about h1 {
+  font-size: 22px;
+  line-height: 24px;
+  padding: 44px 0 0;
+  position: relative;
+}
+.index-footer-about-row {
+  font-size: 0;
+  margin: 52px auto;
+  max-width: 1330px;
+}
+.index-footer-about-row li {
+  display: inline-block;
+  vertical-align: top;
+}
+.index-footer-about-row-list {
+  width: 25%;
+}
+.info-img img {
+  vertical-align: middle;
+}
+.index-footer-about ul li h3 {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 13px 0 10px;
+}
+.index-footer-about ul li p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #999;
+  margin: 0;
+}
+
+/*  */
+.index-footer-us {
+  padding: 54px 0 52px;
+  position: relative;
+  color: #fff;
+  background-color: #000;
+}
+.index-footer-us > ul {
+  padding: 0 15px 0 150px;
+  margin: 0 auto;
+  max-width: 1330px;
+  display: flex;
+}
+.index-footer-us > ul > li {
+  display: inline-block;
+  vertical-align: top;
+  flex: 1;
+}
+.index-footer-us h3 {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0;
+}
+.aboutUs-join {
+  margin: 7px 0 54px;
+}
+.index-footer-us > ul > li a {
+  color: #999;
+  font-size: 14px;
+  line-height: 26px;
+  display: inline-block;
+}
