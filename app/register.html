@@ -82,7 +82,10 @@
             $.ajax({
                 url:'http://localhost/LC/lancome/interface/register.php',
                 type:'post',
-                data:{username:$('#lc-username').val(),password:$('#lc-password').val(),bool:0},
+                data:{username:$('#lc-username').val(),
+                password:$('#lc-password').val(),
+                bool:0
+            },
                 success:function(data){
                     
                     console.log(data)

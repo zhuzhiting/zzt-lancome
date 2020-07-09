@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1901648",
+      "name": "购物袋",
+      "font_class": "gouwudai",
+      "unicode": "f0303",
+      "unicode_decimal": 983811
+    },
+    {
       "icon_id": "3640174",
       "name": "个人中心",
       "font_class": "gerenzhongxin",
@@ -13,18 +20,11 @@
       "unicode_decimal": 58886
     },
     {
-      "icon_id": "6010906",
+      "icon_id": "11726700",
       "name": "搜索",
-      "font_class": "sousuo",
-      "unicode": "e60f",
-      "unicode_decimal": 58895
-    },
-    {
-      "icon_id": "10487551",
-      "name": "购物袋",
-      "font_class": "gouwudai",
-      "unicode": "e696",
-      "unicode_decimal": 59030
+      "font_class": "search",
+      "unicode": "e601",
+      "unicode_decimal": 58881
     }
   ]
 }

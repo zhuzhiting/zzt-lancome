@@ -74,7 +74,7 @@ $(".index-center-goods-star-btn").eq(0).click(function () {
     "../interface/addwq.php",
     {
       id: 1314,
-      img: "./img/2.jpg",
+      img: "./static/img/2.jpg",
       price: 1080,
       name: "第二代小黑瓶",
     },

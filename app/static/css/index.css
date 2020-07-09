@@ -89,6 +89,13 @@ a {
   transition: all 2s ;
 }
 
+.index-top-bottom-one-list>li:hover{
+  font-size: 18px !important;
+}
+.index-top-bottom-one-list>li ul li:hover{
+  font-size: 14px !important;
+}
+
 /* 护肤 二级菜单样式 */
 .second-Skin-care-triangle{
   position: absolute;
@@ -305,7 +312,9 @@ a {
   margin: 0px;
   line-height: normal;
 }
-
+.iconfont{
+  font-size: 27px!important;
+}
 
 /* 轮播图 */
 .index-banner{
